@@ -1,0 +1,10 @@
+Package: rfuncs
+Title: Useful R Functions Accordin to paleolimbot
+Version: 0.0.0.9000
+Authors@R: person("Dewey", "Dunnington", email = "dewey@fishandwhistle.net", role = c("aut", "cre"))
+Description: Various R Functions worth keeping and documenting.
+Depends: R (>= 3.2.2)
+Imports: foreach, tools, osmar, plyr
+Suggests: prettymapr
+License: GPL-2
+LazyData: true
