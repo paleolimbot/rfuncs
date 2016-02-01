@@ -37,7 +37,6 @@ getexif <- function(filename) {
     } else {
       ngroups <- as.integer(length(filename)/nominallen) + 1
     }
-    message("Nominal length: ", nominallen)
     filenameslist <- foreach(i=1:ngroups) %do% {
       minind <- ((i-1)*nominallen+1)
       maxind <- min(i*nominallen, length(filename))
@@ -56,5 +55,5 @@ getexif <- function(filename) {
 
 #helper function to generate exif commands
 .exifcommand <- function(exiftoolpath, fnames) {
-  paste(exiftoolpath, "-n -csv", paste(shQuote(fnames), collapse=" "))
+  paste(shQuote(exiftoolpath), "-n -csv", paste(shQuote(fnames), collapse=" "))
 }
