@@ -2,7 +2,6 @@
 
 export(extract_files)
 export(geodist)
-export(getexif)
 export(mergeduplicates)
 export(osmdata_highways)
 export(osmdata_nearest_nodes)
